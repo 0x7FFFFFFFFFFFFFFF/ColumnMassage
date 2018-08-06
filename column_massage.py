@@ -1,3 +1,8 @@
+# Copyright © 2018 Yang Shuai <yangshuai@gmail.com>
+# This work is free. You can redistribute it and/or modify it under the
+# terms of the Do What The Fuck You Want To Public License, Version 2,
+# as published by Sam Hocevar. See the COPYING file for more details.
+
 import sublime, sublime_plugin, re
 
 def region_to_ab(region):
@@ -5,11 +10,6 @@ def region_to_ab(region):
 
 def ab_to_region(a, b):
     return sublime.Region(a, b)
-
-# Create a region and select it
-# >>> a = sublime.Region(1, 10)
-# >>> view.sel().clear()
-# >>> view.sel().add(a)
 
 class ColumnMassageCommand(sublime_plugin.TextCommand):
     def run(self, edit, operation=None, a_tuple=None, a_string=""):
@@ -61,8 +61,3 @@ class ColumnMassageCommand(sublime_plugin.TextCommand):
 
                 print(current_line)
                 self.view.run_command("column_massage", {"operation": "replace_region", "a_tuple": region_to_ab(current_line_region), "a_string": rule_copy})
-
-
-    def massage_rule_change(self, rule):
-        pass
-

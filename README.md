@@ -70,4 +70,6 @@ Clone this repository into Sublime Text "Packages" directory.
 
 ## License
 
-Yang Shuai
+Copyright © 2018 Yang Shuai <yangshuai at gmail.com>
+
+This work is free. You can redistribute it and/or modify it under the terms of the [Do What The Fuck You Want To Public License](http://www.wtfpl.net), Version 2, as published by Sam Hocevar. See the [COPYING](https://github.com/yangshuairocks/ColumnMassage/blob/master/COPYING) file for more details.
